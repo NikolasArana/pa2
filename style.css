@@ -101,40 +101,42 @@ a{
 
 .titulo{
     font-weight: 900;
-     font-size: 40px;
+    font-size: 40px;
     align-items: center;
     justify-content: center;
     display: flex;
+    padding-bottom: 30px;
     padding-top: 30px;
     background-color: black;
     color: white;
 }
   
 
-/*#marcas{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 230px;
-    padding: 40px 0;
-    background-color: black;
-    min-height: 1000px;
-    
+#marcas{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: black;
+   flex-wrap: wrap;
+   min-height: 900px;
 }
  
-img{
-     border-radius: 5px;
+#marcas img{
+    border-radius: 5px;
+}
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    flex-wrap: wrap;
 }
  
 .info{
- max-width: 200px;
- display: flex;
- flex-direction: column;
- align-items: center;
- text-align: center;
-}*/
-#marcas {
+margin: 25px;
+}
+/*#marcas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -143,18 +145,21 @@ img{
     padding: 60px 0;
     background-color: black;
     width: 100%;
-  }
+}
   
-  .info {
-    flex: 1 1 calc(33.333% - 60px); /* 3 por fila sin forzar ancho fijo */
+.info {
+    flex: 1 1 calc(33.333% - 60px); 
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-  }
+}
   
-  #marcas img {
-    width: 80%;  /* un poco más pequeño para dejar espacio entre ellas */
+#marcas img {
+    width: 80%;  
     height: auto;
     border-radius: 5px;
-  }
+}*/
+/* Estilos para la sección #marcas */
+
+
