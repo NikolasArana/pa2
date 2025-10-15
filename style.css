@@ -22,9 +22,9 @@ padding: 0 2rem;
 }
 
 header{
-    background-color: rgba(0, 0, 0, 0.926);
+    background-color: rgb(0, 0, 0);
     min-height: 84px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    opacity: 0.9;
     z-index: 1000;
     position: fixed;
     top: 0;
@@ -43,14 +43,14 @@ a{
     text-decoration: none;
     color: white;
 }
-.site-nav li a{
+.nav-menu li a{
     transition: 0.3s;
 }
-.site-nav i {
+.nav-menu i {
     margin-right: 8px;
     font-size: 18px;
 }
-.site-nav a:hover{
+.nav-menu a:hover{
     color: yellow;
 }
 
@@ -69,6 +69,7 @@ a{
     background-color: rgb(14, 14, 14);
     flex-wrap: wrap;
     padding: 0;
+    position: relative;
 }
 
 .texto-nosotros{
@@ -98,8 +99,29 @@ a{
     margin: 0; 
     font-weight: 200;
 }
+.button{
+    width: 87px;
+    padding: 10px 30px;
+    background-color: #E1306C;
+    font-weight: 900;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 19px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 0 15px 10px #e1306b77;
+    transition: background-color 2s ease;
 
-.titulo{
+}
+
+.button:hover {
+    transform: translateY(-5px) scale(1.05); 
+    background-color: #405DE6;
+}
+
+#entrada-marca{
     font-weight: 900;
     font-size: 40px;
     align-items: center;
@@ -124,7 +146,7 @@ a{
 #marcas img{
     border-radius: 5px;
 }
-.contenedor {
+.contenedor-marca {
     display: flex;
     justify-content: space-between;
     max-width: 1300px;
@@ -136,30 +158,61 @@ a{
 .info{
 margin: 25px;
 }
-/*#marcas {
+
+#baila-recicla{
+    min-height: 770px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    padding: 60px 0;
-    background-color: black;
-    width: 100%;
+   background-color: rgb(14, 14, 14);
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   gap: 150px;
 }
-  
-.info {
-    flex: 1 1 calc(33.333% - 60px); 
+#baila-recicla img{
+    border-radius: 50%;
+    margin-right: 40px;
+    filter: sepia(70%);
+    transition: transform 0.6s ease;
+}
+#baila-recicla img:hover{
+    transform: rotate(360deg);
+}
+.texto-recicla{
+    color: white;
+    max-width: 700px;
+    margin-left: 40px;
+    text-align: left; 
+}
+
+#baila-recicla h1{
+    font-size: 50px;
+}
+
+.demostracion{
+    min-height: 700px;
+    background-color: rgb(49, 49, 49);
+    margin-top: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+
 }
-  
-#marcas img {
-    width: 80%;  
-    height: auto;
-    border-radius: 5px;
-}*/
-/* Estilos para la sección #marcas */
 
 
+.personalizado{
+    list-style: none;
+
+}
+
+.personalizado li {
+position: relative;
+padding-left: 25px;
+margin: 8px 0;
+}
+
+.personalizado li::before{
+    content: "★";     
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;   
+    color:  goldenrod;  
+}
