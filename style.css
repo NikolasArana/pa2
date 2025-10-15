@@ -145,7 +145,11 @@ a{
  
 #marcas img{
     border-radius: 5px;
+    transition: transform 0.3s ease;
 }
+#marcas img:hover {
+    transform: scale(1.1); 
+  }
 .contenedor-marca {
     display: flex;
     justify-content: space-between;
@@ -162,11 +166,11 @@ margin: 25px;
 #baila-recicla{
     min-height: 770px;
     display: flex;
-   background-color: rgb(14, 14, 14);
-   text-align: center;
-   justify-content: center;
-   align-items: center;
-   gap: 150px;
+    background-color: rgb(14, 14, 14);
+    text-align: center; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 150px;
 }
 #baila-recicla img{
     border-radius: 50%;
@@ -215,4 +219,34 @@ margin: 8px 0;
     top: 0;
     font-size: 20px;   
     color:  goldenrod;  
+}
+.titulo-video{
+    font-weight: 900;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: black;
+    color: white;
+}
+
+.videos{
+min-height: 500px;
+background-color: black;
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+
+}
+
+.videos iframe{
+    height:320px ;
+    width: 470px;
+}
+.moti{
+    height:320px ;
+    width: 470px;
 }
