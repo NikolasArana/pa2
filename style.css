@@ -1,11 +1,13 @@
 html {
-    scroll-behavior: smooth;
-  }
-body{
-    font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
-    margin: 0; 
+scroll-behavior: smooth;
 }
+
+body{
+font-family: 'Poppins', sans-serif;
+min-height: 100vh;
+margin: 0; 
+}
+/* parte 1 menu */
 .menu{
 display: flex;
 justify-content: space-between;
@@ -16,220 +18,213 @@ padding: 0 2rem;
 }
 
 .logo{
-    font-size: 35px;
-    color: white;
-    font-weight: 600;
+font-size: 35px;
+color: white;
+font-weight: 600;
 }
 
 header{
-    background-color: rgb(0, 0, 0);
-    min-height: 84px;
-    opacity: 0.9;
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+background-color: rgb(0, 0, 0);
+min-height: 84px;
+opacity: 0.9;
+z-index: 1000;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
 }
 
 ul{
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    font-size: 20px;
+list-style: none;
+display: flex;
+gap: 50px;
+font-size: 20px;
 }
 
 a{
-    text-decoration: none;
-    color: white;
+text-decoration: none;
+color: white;
 }
 .nav-menu li a{
-    transition: 0.3s;
+transition: 0.3s;
 }
 .nav-menu i {
-    margin-right: 8px;
-    font-size: 18px;
+margin-right: 8px;
+font-size: 18px;
 }
 .nav-menu a:hover{
-    color: yellow;
+color: yellow;
 }
 
-
+/* parte 2 video de fondo */
 .intro-superclub{
-    width: 100%;  
-    height: auto;
-    display: block;
-    margin: 0 auto; 
+width: 100%;  
+height: auto;
+display: block;
+margin: 0 auto; 
 }
 
+/* parte 3 seccion nosotros */
 #nosotros{
-    display: flex;
-    min-height: 880px;
-    align-items: center;
-    background-color: rgb(14, 14, 14);
-    flex-wrap: wrap;
-    padding: 0;
-    position: relative;
+display: flex;
+min-height: 880px;
+align-items: center;
+background-color: rgb(14, 14, 14);
+flex-wrap: wrap;
+padding: 0;
+position: relative;
 }
 
 .texto-nosotros{
-    max-width: 500px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto; 
-    text-align: left; 
-    margin-bottom: 70px; 
+max-width: 500px;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 0 auto; 
+text-align: left; 
+margin-bottom: 70px; 
 }
 #nosotros img{
-    width: auto;
-    max-height: 600px;
-    border-radius: 2%;
-    margin-left: 0;
+width: auto;
+max-height: 600px;
+border-radius: 2%;
+margin-left: 0;
 }
 .texto-nosotros h1 {
-    font-size: 54px; 
-    margin-bottom: 1rem; 
+font-size: 54px; 
+margin-bottom: 1rem; 
 }
 
 .texto-nosotros h3 {
-    font-size: 1.125rem; 
-    line-height: 1.6; 
-    margin: 0; 
-    font-weight: 200;
+font-size: 1.125rem; 
+line-height: 1.6; 
+margin: 0; 
+font-weight: 200;
 }
 .button{
-    width: 87px;
-    padding: 10px 30px;
-    background-color: #E1306C;
-    font-weight: 900;
-    font-size: 16px;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    margin-top: 19px;
-    transition: transform 0.2s ease;
-    cursor: pointer;
-    box-shadow: 0 0 15px 10px #e1306b77;
-    transition: background-color 2s ease;
-
+width: 87px;
+padding: 10px 30px;
+background-color: #E1306C;
+font-weight: 900;
+font-size: 16px;
+color: white;
+border: none;
+border-radius: 8px;
+margin-top: 19px;
+transition: transform 0.2s ease;
+cursor: pointer;
+box-shadow: 0 0 15px 10px #e1306b77;
+transition: background-color 2s ease;
 }
 
 .button:hover {
-    transform: translateY(-5px) scale(1.05); 
-    background-color: #405DE6;
+transform: translateY(-5px) scale(1.05); 
+background-color: #405DE6;
 }
 
+/* parte 4 imagenes de marcas */
 #entrada-marca{
-    font-weight: 900;
-    font-size: 40px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    background-color: black;
-    color: white;
+font-weight: 900;
+font-size: 40px;
+align-items: center;
+justify-content: center;
+display: flex;
+padding-bottom: 30px;
+padding-top: 30px;
+background-color: black;
+color: white;
 }
   
-
 #marcas{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-color: black;
-   flex-wrap: wrap;
-   min-height: 900px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: black;
+flex-wrap: wrap;
+min-height: 900px;
 }
  
 #marcas img{
-    border-radius: 5px;
-    transition: transform 0.3s ease;
+border-radius: 5px;
+transition: transform 0.3s ease;
 }
+
 #marcas img:hover {
-    transform: scale(1.1); 
-  }
+transform: scale(1.1); 
+}
+
 .contenedor-marca {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    flex-wrap: wrap;
+display: flex;
+justify-content: space-between;
+max-width: 1300px;
+margin: 0 auto;
+padding: 0 2rem;
+flex-wrap: wrap;
 }
  
 .info{
 margin: 25px;
 }
 
+/* parte 5 seccion con imagen redonda y un cuadro sticky */
 #baila-recicla{
-    min-height: 770px;
-    display: flex;
-    background-color: rgb(14, 14, 14);
-    text-align: center; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 150px;
+min-height: 770px;
+display: flex;
+background-color: rgb(14, 14, 14);
+text-align: center;
+justify-content: center; 
+align-items: center; 
+gap: 100px;
+flex-wrap: wrap;
+position: relative;
 }
+
+.cuadrado{  
+position: sticky;
+margin-top: 10px;     
+margin-right: 0; 
+display: block;
+width: 60px;
+height: 60px;
+background: rgb(255, 242, 0);
+border-radius: 10px;
+align-self: flex-start;
+top: calc(65px + 20px); 
+font-weight:600;
+}
+
 #baila-recicla img{
-    border-radius: 50%;
-    margin-right: 40px;
-    filter: sepia(70%);
-    transition: transform 0.6s ease;
+border-radius: 50%;
+margin-right: 40px;
+filter: sepia(70%);
+transition: transform 0.6s ease;
 }
 #baila-recicla img:hover{
-    transform: rotate(360deg);
+transform: rotate(360deg);
 }
 .texto-recicla{
-    color: white;
-    max-width: 700px;
-    margin-left: 40px;
-    text-align: left; 
+color: white;
+max-width: 700px;
+margin-left: 40px;
+text-align: left; 
 }
 
 #baila-recicla h1{
-    font-size: 50px;
+font-size: 50px;
 }
 
-.demostracion{
-    min-height: 700px;
-    background-color: rgb(49, 49, 49);
-    margin-top: 0;
-    display: flex;
-
-}
-
-
-.personalizado{
-    list-style: none;
-
-}
-
-.personalizado li {
-position: relative;
-padding-left: 25px;
-margin: 8px 0;
-}
-
-.personalizado li::before{
-    content: "★";     
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 20px;   
-    color:  goldenrod;  
-}
-.titulo-video{
-    font-weight: 900;
-    font-size: 1rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    background-color: black;
-    color: white;
+/* parte 6 seccion videos  */
+#titulo-video{
+font-weight: 900;
+font-size: 1rem;
+align-items: center;
+justify-content: center;
+display: flex;
+padding-bottom: 30px;
+padding-top: 30px;
+background-color: black;
+color: white;
 }
 
 .videos{
@@ -238,15 +233,69 @@ background-color: black;
 display: flex;
 align-items: center;
 justify-content: space-around;
-
-
+flex-wrap: wrap;
 }
 
 .videos iframe{
-    height:320px ;
-    width: 470px;
+height:320px ;
+width: 470px;
 }
-.moti{
-    height:320px ;
-    width: 470px;
+
+.video-guardado{
+height:320px ;
+width: 470px;
+}
+
+/* parte 7 seccion listas */
+.eventos-empleados {
+background: rgb(14, 14, 14);
+justify-content: center;
+display: flex;
+min-height: 500px;
+gap: 200px;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.lista-ordenada{
+color: white;
+}
+
+.eventos-empleados p{
+color: white;
+font-size: 33px;
+font-weight: 600;
+}
+
+.personalizado{
+list-style: none;
+}
+
+.personalizado li {
+position: relative;
+padding-left: 25px;
+margin: 8px 0;
+color: white;
+}
+
+.personalizado li::before{
+content: "★";     
+position: absolute;
+left: 0;
+top: 0;
+font-size: 20px;   
+color:  goldenrod;  
+}
+
+/* parte 8 footer  */
+.footer{
+min-height: 100px;
+background-color: black;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.derechos{
+color: white;
 }
