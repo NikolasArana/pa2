@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>ticketplus-contacto</title>
+    <link rel="icon" href="./fotos/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+body{
+background-color: black;
+font-family: 'Poppins', sans-serif;
+}
+
+.menu{
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1600px;
+margin: 0 auto;
+padding: 0 2rem;
+}
+
+.logo{
+font-size: 35px;
+color: white;
+font-weight: 600;
+}
+
+header{
+background-color: rgb(0, 0, 0);
+min-height: 70px;
+top: 0;
+left: 0;
+width: 100%;
+border-bottom: 1px solid gray;
+margin-bottom: 30px;
+}
+
+ul{
+list-style: none;
+display: flex;
+gap: 50px;
+font-size: 20px;
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+.nav-menu li a{
+transition: 0.3s;
+}
+.nav-menu i {
+margin-right: 8px;
+font-size: 18px;
+}
+.nav-menu a:hover{
+color: yellow;
+}
+
+
+.contenedor-mapa iframe {
+width: 600px;
+height: 600px;
+border: 0;
+}
+.contenedor-contacto{
+display: flex;
+gap: 60px;
+justify-content: center;
+margin-top: 30px;
+flex-wrap: wrap;
+}
+.conecta-conmigo{
+background-color: #1a1a1a;
+width: 600px;
+max-height: 600px;
+padding: 40px; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.conecta-conmigo h2{
+color: white;
+font-size: 50px ;
+font-weight: bold;
+
+}
+.entrada-datos {
+display: flex;
+gap: 10px;
+margin-bottom: 15px;
+}
+.entrada-datos input,
+.conecta-conmigo input,
+.conecta-conmigo textarea {
+height: 100%;
+width: 100%;
+padding: 10px;
+border: none;
+border-bottom: 1px solid #444;
+background: none;
+color: white;
+}
+
+.conecta-conmigo textarea {
+resize: none;
+height: 100px;
+margin-top: 10px;
+}
+
+.conecta-conmigo button {
+margin-top: 20px;
+padding: 10px 20px;
+background: none;
+border: 1px solid #444;
+color: white;
+cursor: pointer;
+border-radius: 30px;
+font-weight: bold;
+}
+
+.conecta-conmigo button:hover {
+background-color: yellow;
+color: black;
+}
+
+.footer{
+min-height: 100px;
+background-color: black;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 10px;
+}
+.derechos{
+color: white;
+}
+
+</style>
+<header>
+        <div class="menu">
+         <div class="logo">ticketplus</div>
+         <nav class="nav-menu">
+            <ul>
+                
+                <li><a href="./index.html"><i class="fa-solid fa-ticket"></i>Inicio</a></li>
+            </ul>
+         </nav>
+        </div>
+    </header>
+<section class="contenedor-contacto">
+  <div class="contenedor-mapa">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.99098682348!2d-76.98918979999999!3d-12.112769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ec9379f781%3A0x1b876017fc404c9d!2sJir%C3%B3n%20Monterrey%20405%2C%20Santiago%20de%20Surco%2015000!5e0!3m2!1ses!2spe!4v1709225847938!5m2!1ses!2spe"  allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+
+  <div class="conecta-conmigo">
+    <h2>CONTACTA CON NOSOTROS</h2>
+    <form>
+      <div class="entrada-datos">
+        <input type="text" placeholder="NOMBRE">
+        <input type="email" placeholder="EMAIL">
+      </div>
+       <textarea placeholder="MENSAJE"></textarea>
+      <button type="submit">ENVIAR</button>
+    </form>
+  </div>
+</section>
+<footer class="footer">
+    <div class="derechos">Copyright © 2025 by MazziniCreative . All Rights Reserved</div>
+  </footer>
+
+</body>
+</html>

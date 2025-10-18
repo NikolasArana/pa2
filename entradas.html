@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticketplus-entradas</title>
+    <link rel="icon" href="./fotos/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+body{
+background-color: black;
+font-family: 'Poppins', sans-serif;  
+margin: 0;
+}
+
+.menu{
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1600px;
+margin: 0 auto;
+padding: 0 2rem;
+}
+
+.logo{
+font-size: 35px;
+color: white;
+font-weight: 600;
+}
+
+header{
+background-color: rgb(0, 0, 0);
+min-height: 70px;
+top: 0;
+left: 0;
+width: 100%;
+border-bottom: 1px solid gray;
+}
+
+ul{
+list-style: none;
+display: flex;
+gap: 50px;
+font-size: 20px;
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+.nav-menu li a{
+transition: 0.3s;
+}
+.nav-menu i {
+margin-right: 8px;
+font-size: 18px;
+}
+.nav-menu a:hover{
+color: yellow;
+}
+h1{
+color: white;
+justify-content: center;
+display: flex;
+
+}
+
+.baner img{
+min-width: 100%;
+
+}
+table {
+width: 80%;
+margin: 0 auto;
+border-collapse: collapse;
+background: #1c1c1c;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+thead {
+background: #ff4b2b;
+color: white;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+th, td {
+padding: 15px 20px;
+text-align: center;
+color: white;
+}
+
+tbody tr:nth-child(even) {
+background: #2a2a2a;
+}
+
+tbody tr:hover {
+background: #333;
+transition: 0.3s;
+}
+
+.footer{
+min-height: 100px;
+background-color: black;
+display: flex;
+align-items: center;
+justify-content: center;
+border-top: 1px solid gray ;
+margin-top: 30px;
+}
+.derechos{
+color: white;
+}
+
+
+</style>
+<header>
+        <div class="menu">
+         <div class="logo">ticketplus</div>
+         <nav class="nav-menu">
+            <ul>
+                <li><a href="./index.html"><i class="fa-solid fa-ticket"></i>Inicio</a></li>
+            </ul>
+         </nav>
+        </div>
+    </header>
+    <h1>Entradas disponibles para 2025</h1>
+<section class="baner">
+    <img src="./fotos/getbaner.png" alt="baner get out">
+</section>
+    <table>
+    <thead>
+      <tr>
+        <th>Evento</th>
+        <th>Fecha</th>
+        <th>Local</th>
+        <th>Duración</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Elrow</td>
+        <td>12/10</td>
+        <td>Lurín Live - Lurín</td>
+        <td>12 horas (6PM - 6AM)</td>
+        <td>S/ 180</td>
+      </tr>
+      <tr>
+        <td>Flow</td>
+        <td>31/10</td>
+        <td>Mamacona - Lurín</td>
+        <td>12 horas (6PM - 6AM)</td>
+        <td>S/ 180</td>
+      </tr>
+      <tr>
+        <td>Haunted</td>
+        <td>01/11</td>
+        <td>Mamacona - Lurín</td>
+        <td>12 horas (6PM - 6AM)</td>
+        <td>S/ 180</td>
+      </tr>
+      <tr>
+        <td>Get Out</td>
+        <td>22/11</td>
+        <td>Mamacona - Lurín</td>
+        <td>12 horas (6PM - 6AM)</td>
+        <td>S/ 180</td>
+      </tr>
+      <tr>
+        <td>Tribu</td>
+        <td>10/12</td>
+        <td>Mamacona - Lurín</td>
+        <td>12 horas (6PM - 6AM)</td>
+        <td>S/ 180</td>
+      </tr>
+    </tbody>
+  </table>
+<footer class="footer">
+        <div class="derechos">Copyright © 2025 by MazziniCreative . All Rights Reserved</div>
+    </footer>
+</body>
+</html>

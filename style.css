@@ -7,6 +7,7 @@ font-family: 'Poppins', sans-serif;
 min-height: 100vh;
 margin: 0; 
 }
+
 /* parte 1 menu */
 .menu{
 display: flex;
@@ -25,7 +26,7 @@ font-weight: 600;
 
 header{
 background-color: rgb(0, 0, 0);
-min-height: 84px;
+min-height: 70px;
 opacity: 0.9;
 z-index: 1000;
 position: fixed;
@@ -55,7 +56,6 @@ font-size: 18px;
 .nav-menu a:hover{
 color: yellow;
 }
-
 /* parte 2 video de fondo */
 .intro-superclub{
 width: 100%;  
@@ -63,8 +63,42 @@ height: auto;
 display: block;
 margin: 0 auto; 
 }
+/* parte 3 menu secundario sticky */
+.menu-secundario {
+position: sticky;
+top: 70px; 
+background: black;
+color: white;
+padding: 10px 0;
+z-index: 999;
+opacity: 0.9;
+}
 
-/* parte 3 seccion nosotros */
+.menu-secundario ul {
+display: flex;
+justify-content: center;
+gap: 20px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.menu-secundario a {
+color: white;
+text-decoration: none;
+}
+
+.menu-secundario li a{
+transition: 0.3s;
+}
+.menu-secundario i {
+margin-right: 8px;
+font-size: 18px;
+}
+.menu-secundario a:hover{
+color: yellow;
+}
+/* parte 4 seccion nosotros */
 #nosotros{
 display: flex;
 min-height: 880px;
@@ -123,7 +157,7 @@ transform: translateY(-5px) scale(1.05);
 background-color: #405DE6;
 }
 
-/* parte 4 imagenes de marcas */
+/* parte 5 imagenes de marcas */
 #entrada-marca{
 font-weight: 900;
 font-size: 40px;
@@ -167,7 +201,7 @@ flex-wrap: wrap;
 margin: 25px;
 }
 
-/* parte 5 seccion con imagen redonda y un cuadro sticky */
+/* parte 6 seccion con imagen redonda y un cuadro sticky */
 #baila-recicla{
 min-height: 770px;
 display: flex;
@@ -190,7 +224,7 @@ height: 60px;
 background: rgb(255, 242, 0);
 border-radius: 10px;
 align-self: flex-start;
-top: calc(65px + 20px); 
+top: calc(100px + 20px); 
 font-weight:600;
 }
 
@@ -214,7 +248,7 @@ text-align: left;
 font-size: 50px;
 }
 
-/* parte 6 seccion videos  */
+/* parte 7 seccion videos  */
 #titulo-video{
 font-weight: 900;
 font-size: 1rem;
@@ -246,7 +280,7 @@ height:320px ;
 width: 470px;
 }
 
-/* parte 7 seccion listas */
+/* parte 8 seccion listas */
 .eventos-empleados {
 background: rgb(14, 14, 14);
 justify-content: center;
@@ -287,7 +321,7 @@ font-size: 20px;
 color:  goldenrod;  
 }
 
-/* parte 8 footer  */
+/* parte 9 footer  */
 .footer{
 min-height: 100px;
 background-color: black;
